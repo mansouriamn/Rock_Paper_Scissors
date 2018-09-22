@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="disable()">
+
+  <div class="container">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <div class="center">
+          <h1>This is a rock paper scissor game</h1>
+        </div>
+      </div>
+      <div class="panel-body center">
+        <button type="button" id="rock" class="btn btn-sm btngame"><img height="200" src="./pics/rock.png" alt=""></button>
+        <button type="button" id="paper" class="btn btn-sm btngame"><img height="200" src="./pics/paper.png" alt=""></button>
+        <button type="button" id="scissor" class="btn btn-sm btngame"><img height="200" src="./pics/scissor.png" alt=""></button>
+      </div>
+      <div class="panel-footer">
+        <div class="container">
+          <div class="col-md-6 center">
+            <div class="row">
+              <h3>Single Player Click Below</h3>
+              <button id="singleP" class="btn btn-sm"><img height="75" src="./pics/singleplayer.png" alt=""></button>
+            </div>
+          </div>
+          <div class="col-md-6 center">
+            <div class="row">
+              <h3>Multiplayer Click Below</h3>
+              <button id="multyP" class="btn btn-sm"><img height="100" src="./pics/multiplayer.png" alt=""></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="panel-footer">
+      <div id="score-board" class="container">
+      <div id="result"></div>
+        
+      </div>
+      
+      </div>
+    </div>
+  </div>
+
+  <script src="./app.js"></script>
+</body>
+
+</html>
